@@ -1,0 +1,36 @@
+{
+    "workbench.colorCustomizations": { 
+        "terminal.foreground":"#D0D0D0",
+        "terminalCursor.background":"#D0D0D0",
+        "terminalCursor.foreground":"#D0D0D0",
+        "terminal.ansiBlack":"#151515",
+        "terminal.ansiBlue":"#ffb0f8",
+        "terminal.ansiBrightBlack":"#505050",
+        "terminal.ansiBrightBlue":"#6FC2EF",
+        "terminal.ansiBrightCyan":"#3ebdb2",
+        "terminal.ansiBrightGreen":"#bf63a0",
+        "terminal.ansiBrightMagenta":"#70ffc8",
+        "terminal.ansiBrightRed":"#fa7590",
+        "terminal.ansiBrightWhite":"#F5F5F5",
+        "terminal.ansiBrightYellow":"#ddd46f",
+        "terminal.ansiCyan":"#12CFC0",
+        "terminal.ansiGreen":"#9163dc",
+        "terminal.ansiMagenta":"#f49cf1",
+        "terminal.ansiRed":"#FB9FB1",
+        "terminal.ansiWhite":"#e1e0e0",
+        "terminal.ansiYellow": "#fceb87"
+    }
+,
+"workbench.colorTheme": "Bear Theme",
+"editor.bracketPairColorization.enabled": true,
+"editor.codeLensFontSize": 18,
+"editor.fontSize": 18,
+"editor.inlayHints.fontSize": 18,
+"editor.suggestFontSize": 18,
+"scm.inputFontSize": 18,
+"debug.console.fontSize": 18,
+"markdown.preview.fontSize": 18,
+"notebook.markup.fontSize": 18,
+"terminal.integrated.fontSize": 18,
+  }
+  
