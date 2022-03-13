@@ -1,0 +1,40 @@
+body{
+background-color: #f5f5dc;
+width: 650px;
+ height: 600px;
+ margin: auto; 
+ position: relative;
+}
+
+h1{
+    color: rgb(237, 147, 255);
+    font-family: Arial;
+    font-size: 400%;
+
+
+}
+
+
+
+
+p{
+    border: 2px solid rgb(249, 166, 214);
+    color: rgb(224, 254, 175);
+    font-family: Arial;
+    font-size: 300%;
+    padding: 300%;
+    margin: 50px;
+}
+
+#para1{
+    color: rgb(255, 192, 57);
+    font-family: verdana;
+    
+}
+
+.center{
+    text-align: center;
+    color: rgb(125, 237, 222);
+
+}
+
