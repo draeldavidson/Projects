@@ -1,0 +1,4 @@
+body { font-family: arial; margin: 30px; }
+input { display: block; padding: 10px; font-size: 14pt; margin-top: 20px; margin-bottom: 20px; float: left; }
+
+button { padding: 12px; font-size: 14pt; margin-top: 20px; margin-bottom: 20px; margin-left: 20px; }

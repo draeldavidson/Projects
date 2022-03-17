@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hippo story</title>
+
+
+    
+  </head>
+  <body>
+
+    First name:<br>
+    <input type="text" name="firstname" id='firstname'>
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" id='lastname'>
+    <br>
+
+    Age: <br>
+    <input type="text" name="age" id='age'> <br>
+    
+    <input type="button" value="Send" onclick="myFunction()"> <br>
+    
+
+
+    <p>my name is 
+        <u> <output id="name"> </u> my name is 
+            <u> <output id="nam"> </u> 
+     </p>
+
+
+
+
+
+
+<script>
+myFunction = function() {
+    var first = document.getElementById("firstname").value;
+    var second = document.getElementById("lastname").value;
+    
+    document.getElementById("name").innerHTML = first+" "+second;
+    document.getElementById("nam").innerHTML = first+" "+second;
+}
+
+</script>
+  
+  </body>
+</html>

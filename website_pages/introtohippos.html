@@ -16,6 +16,10 @@
   </head>
   <body>
 
+	
+
+
+
     <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
@@ -36,7 +40,8 @@
 					<p><h4><div style="text-align:center;">Don't Trust Them </div></h4></p>
 
 					<p><i><div style="text-align:center;"><a href="hippoinfo.html">
-					<button type="button" class="btn btn-lg btn-block btn-outline-info">
+						<button onclick="myFunction()" class="btn btn-lg btn-block btn-outline-info">
+
 						CLICK IF YOU DON'T BELIVE ME
 					</button>
 				</a></div>
@@ -50,7 +55,24 @@
 		</div>
 	</div>
 </div>
+	<script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
 
+					<!--✅POP UP-->
+<p id="demo"></p>
+
+<script>
+		function myFunction() {
+		var txt;
+		if (confirm("Are You Sure You Want To Know?")) {
+			txt = "Good!";
+		} else {
+			txt = "Too Bad!";
+		}
+		document.getElementById("demo").innerHTML = txt;
+		}
+</script>
     
   </body>
 </html>
