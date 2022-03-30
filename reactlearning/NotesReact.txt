@@ -1,0 +1,126 @@
+React
+
+React is an open-source JavaScript library created by Facebook for building complex, interactive UIs in web and mobile applications.
+The key point in this answer is that React's core purpose is to build UI components; it is often referred to as just the "V" (View) in an "MVC" architecture.
+
+import React from 'react'; <- Use in all files
+import ReactDOM from 'react-dom'; <- Used in the index.js only
+
+    Start each file with this because for using the createElement() function we need to import React and if we do not import it then React.createElement() function will be undefined.
+
+
+
+
+React has mainly two different kinds of components:
+
+    Functional Components: Functional components are simply javascript functions. We can create a functional component in React by writing a javascript function. ...
+        // WE CAN USE FUNCTION TO DECLARE A FUNCTIONAL Component:
+
+            function FunctionFunction() {
+                return<h1>Using a function Functional Component!</h1>
+            }
+            export default FunctionFunction 
+
+
+        // WE CAN USE ARROW TO DECLARE A FUNCTIONAL Component
+
+            const ArrowFunction=()=>{
+                return<h1>Using an arrow Functional Component!</h1>
+            }
+            export default ArrowFunction 
+        
+        // **JUST REMEMBER TO HAVE THE FUNCTION NAME START WITH A CAPITAL LETTER**
+
+***function components are a simpler way to write components that only contain a render method and don’t have their own state. Instead of defining a class which extends React.Component, we can write a function that takes props as input and returns what should be rendered. Function components are less tedious to write than classes, and many components can be expressed this way.
+
+
+    Class Components: The class components are a little more complex than the functional components.they can work with each other. We can pass data from one class component to other class components.These components are simple classes (made up of multiple functions that add functionality to the application). All class based components are child classes for the Component class of ReactJS. 
+
+        //**a class component can be used just like a functional component:
+
+            class Class extends React.Component {
+                render() {
+                return <h1>Using a Class Component!</h1>;
+                }
+            }
+            export default Class;
+
+
+        //**Once a class component is declared, it can be used in other components. 
+
+            class Sample extends React.Component {
+                render(){
+                    return <h1>Using a Class Component!</h1>;
+                }
+            }
+
+            class Class extends React.Component {
+                render() {
+                return <Sample />;
+                }
+            }
+            export default Class;
+
+        //**A MORE COMPLEX EXAMPLE OF A CLASS COMPONENT BEING USED IN ANOTHER COMPONENT
+
+            class Class extends React.Component {
+
+                // The constructor in a React component is called before the component is mounted. When you implement the 
+                // constructor for a React component, you need to call super(props) method before any other statement. 
+                // If you do not call super(props) method, this.props will be undefined in the constructor and can lead to bugs.    
+                constructor(props) {
+
+            // super() s used to call the constructor of its parent class. 
+            // This is required when we need to access some variables of its parent class.       
+                    super(props);
+
+                    this.state = { change: true };
+                }
+                // render is the only required method in a class component and is responsible for describing the view to be 
+                // rendered to the browser window.
+                render() {
+                    return(
+                        <div>
+                            <button onClick={() =>{this.setState({ change: !this.state.change });}}>
+                                Click Here!
+                            </button>
+                            {this.state.change ? (
+                                <h1>A more complex example of class function</h1>
+                            ) :(
+                                <h1> Can i figure out what all this means?</h1>
+                            )}
+                        </div>
+                    );
+                }
+            }
+        export default Class;
+
+
+//The main feature of class-based components that distinguished them from functional components is that they have access to a states which dictates the current behavior and appearance of the component 
+
+
+
+
+
+
+React.Component
+     a React component class, or React component type. A component takes in parameters, called props (short for “properties”), and returns a hierarchy of views to display via the render method.
+
+
+
+
+
+
+How to Start
+
+    npx create-react-app helloworld
+    go to folder that has been created
+    npm init -y
+    deleted the content of the src so remove confusion 
+    created a new index.js and index.css
+    created a component folder in order to practice importing and exporting components into the main component
+    npm start <-- run application
+
+    import React from 'react'; <- Use in all files
+    import ReactDOM from 'react-dom'; <- Used in the index.js only
+
